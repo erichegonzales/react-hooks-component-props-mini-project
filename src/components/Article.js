@@ -2,7 +2,7 @@ import React from 'react'
 
 const minutesEmoji = (minutes) => {
     let emoji = '☕️'
-    let number = Math.floor(minutes / 5)
+    let number = Math.ceil(minutes / 5)
 
     if (minutes >= 30) {
         emoji = '🍱'
