@@ -6,7 +6,7 @@ const minutesEmoji = (minutes) => {
 
     if (minutes >= 30) {
         emoji = '🍱'
-        number = Math.floor(minutes / 10) 
+        number = Math.ceil(minutes / 10) 
     }
 
     return emoji.repeat(number)
